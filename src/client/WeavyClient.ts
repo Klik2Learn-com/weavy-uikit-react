@@ -37,8 +37,8 @@ export default class WeavyClient implements IWeavyClient {
     }
 
     async get(url: string, retry: boolean = true): Promise<Response> {
-        //const token = await this.tokenFactoryInternal();
-        //console.log("GET:", url, " - t:", token);
+        const token = await this.tokenFactoryInternal();
+        console.log("GET:", url, " - t:", token);
         const response = await fetch(this.url + url, {
             headers: {
                 "content-type": "application/json",
