@@ -447,10 +447,10 @@ const Editor = ({ id, appId, parentId, placeholder, text, buttonText, embed, att
         <>
             {editorType === "messages" &&
                 <div className="wy-message-editor-inputs">
-                    {(showAttachments || showCloudFiles) &&
+                    {/* {(showAttachments || showCloudFiles) &&
                         <Dropdown.UI directionY='up' icon="plus">
 
-                            {/* {showAttachments &&
+                            {showAttachments &&
                                 <>
                                     <Dropdown.Item onClick={openFileInput}>
                                         <Icon.UI name="attachment" /> File from device
@@ -463,13 +463,13 @@ const Editor = ({ id, appId, parentId, placeholder, text, buttonText, embed, att
                                 <Dropdown.Item onClick={openCloudFiles}>
                                     <Icon.UI name="cloud" /> File from cloud
                                 </Dropdown.Item>
-                            } */}
-                            {/* meetings */}
+                            }
+
                             {showMeetings &&
                                 <Meetings onMeetingAdded={handleMeetingAdd} dropdown={true} />
                             }
                         </Dropdown.UI>
-                    }
+                    } */}
                     <div className={classNames("wy-message-editor-text", { "wy-is-invalid": editorError })}>
                         <ReactCodeMirror
                             ref={editorRef}
