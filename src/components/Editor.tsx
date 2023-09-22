@@ -450,7 +450,7 @@ const Editor = ({ id, appId, parentId, placeholder, text, buttonText, embed, att
                     {(showAttachments || showCloudFiles) &&
                         <Dropdown.UI directionY='up' icon="plus">
 
-                            {showAttachments &&
+                            {/* {showAttachments &&
                                 <>
                                     <Dropdown.Item onClick={openFileInput}>
                                         <Icon.UI name="attachment" /> File from device
@@ -463,7 +463,7 @@ const Editor = ({ id, appId, parentId, placeholder, text, buttonText, embed, att
                                 <Dropdown.Item onClick={openCloudFiles}>
                                     <Icon.UI name="cloud" /> File from cloud
                                 </Dropdown.Item>
-                            }
+                            } */}
                             {/* meetings */}
                             {showMeetings &&
                                 <Meetings onMeetingAdded={handleMeetingAdd} dropdown={true} />
