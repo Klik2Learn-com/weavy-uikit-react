@@ -172,7 +172,7 @@ const Conversation = ({ id, showBackButton, features }: ConversationProps) => {
 
                                 <Dropdown.Item onClick={() => toggleDetailsModal(true)}>
                                     <Icon.UI name="information" />
-                                    Information
+                                    Details
                                 </Dropdown.Item>
 
                                 {dataConversation.type === ChatRoom &&
