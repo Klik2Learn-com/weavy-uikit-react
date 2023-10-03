@@ -41,7 +41,7 @@ const queryClient = new QueryClient({
 const WeavyProvider = ({ children, client, options }: WeavyProviderProperties) => {
 
   let defaultOptions: WeavyContextOptions = {
-    zoomAuthenticationUrl: undefined,
+    zoomAuthenticationUrl: "https://zoom.us/oauth/authorize?response_type=code&client_id=hJPBXEDrRCyQgcWj47xv9w&redirect_uri=https://klik2learn.weavy.io/meetings/zoom/auth",
     teamsAuthenticationUrl: undefined,    
     enableScrollbarDetection: true,
     filebrowserUrl: "https://filebrowser.weavy.io/v14/",
